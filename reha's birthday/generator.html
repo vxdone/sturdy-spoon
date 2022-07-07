@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> generator </title> 
+</head>
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+
+    .generator{
+        text-align:center;
+        font-family: 'Gentium Book Plus', serif;
+    }
+  
+    h4{
+        color:#3F4E4F;
+    }
+    
+    h5{
+        color:#A27B5C;
+         font-family: 'Gentium Book Plus', serif;
+    }
+    
+    h1{
+        color:#2C3639;
+         font-family: 'Playfair Display', serif;
+    }
+    
+    h2{
+        color:#2C3639;
+         font-family: 'Playfair Display', serif;
+    }
+    
+    h3{
+        color:#2C3639;
+         font-family: 'Gentium Book Plus', serif;
+    }
+
+    body{
+        background-color:#DCD7C9;
+    }
+
+    button{
+         font-family: 'Gentium Book Plus', serif;
+    }
+
+</style>
+
+<body> 
+<header align = "center">
+<a href="index.html"> <img src="https://fontmeme.com/permalink/220706/187de01f47aa99c81277e9454e152d6f.png" alt="libre-bodoni-font" border="0"> </a> 
+</header>
+
+<hr> 
+<nav>
+<table align = "center" cellspacing="5"  cellpadding = "5">
+<tr>
+<td> <a href = "index.html"> Home </a> </td>   
+<td> <a href = "generator.html"> Word Generator </a> </td>
+<td><a href = "playlist.html"> Spotify Playlist </a> </td>
+<td> <a href = "letter.html"> Letter </a> </td>
+<td> <a href = "balloon.html"> Balloon Message </a></td>
+</tr>   
+</table>
+</nav>
+
+
+<div class = "generator">
+<div align = "center"> 
+<h1> generator </h1>
+<img src = "https://i.pinimg.com/736x/78/05/50/780550b17849f8016fcce44880e60de4.jpg" width = "15%"> 
+<h2> (diar) reha you are... </h2>
+<h3> click the button! </h3>
+<h5> (totally nothing suspicious why are u thinking that) </h5>
+<button> click me bbg ;) </button>
+  <div id="output"></div>
+  <script>
+    var btn = document.querySelector("button");
+    var out = document.getElementById("output");
+    
+  
+    btn.addEventListener("click", getWord);
+   
+    function getWord(){
+     
+      
+      var theWord= [
+        'kind I GUESS',
+        'supportive',
+        'funny',
+        'sort of big brain',
+        'stinky',
+        'weird for liking my mom',
+        'abnormally tall',
+        'stupid',
+        'considerate',
+        'sus',
+        'ugly /j',
+        'a gremlin',
+        'stinky',
+        'poopy',
+        'so patient it is impressive',
+        'diarrhea',
+        'pp',
+        'like mustard on hotdog which i hate',
+        'a NERD',
+        'warm-hearted',
+        'emo (im kidding)',
+        'questionable in terms of health and fashion taste',
+        'a sussy baka <3 ',
+        'in dire need of a therapist. pls seek help',
+        'trash at running or anything physical', 
+        'not okay in general',
+        'the roblox character with that one smug face',
+      ];
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      
+     
+      output.textContent = theWord[wordNum];
+    }
+</script>
